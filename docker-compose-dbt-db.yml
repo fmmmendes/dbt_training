@@ -1,0 +1,23 @@
+# https://github.com/devcontainers/templates/blob/main/src/docker-existing-docker-compose/.devcontainer/docker-compose.yml
+
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: dbt_postgres_container
+    restart: unless-stopped
+    volumes:
+      - postgres-data-dbt:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5555:5432"
+    networks:
+      - default
+volumes:
+  postgres-data-dbt:
+networks:
+  default:

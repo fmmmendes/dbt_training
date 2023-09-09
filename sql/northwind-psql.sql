@@ -131,3 +131,12 @@ CREATE TABLE IF NOT EXISTS northwind.orders_tax_status (
   tax_status_name VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );
+
+
+CREATE TABLE IF NOT EXISTS northwind.orders_status (
+  id SMALLINT NOT NULL,
+  status_name VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+
