@@ -1,3 +1,6 @@
+
+[![build](https://github.com/fmmmendes/dbt_training/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/fmmmendes/dbt_training/actions/workflows/build.yml)
+
 # DBT Training
 
 
