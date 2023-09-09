@@ -9,8 +9,8 @@ dbt_training:
       user: postgres
       pass: postgres
       dbname: postgres
-      schema: public
-
+      #schema: public
+      schema: northwind_dbt
     # prod:
     #   type: postgres
     #   threads: [1 or more]
