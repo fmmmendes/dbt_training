@@ -5,7 +5,7 @@ models:
   - name: count_orders
     description: "A starter dbt model"
     columns:
-      - name: id
+      - name: customer_id
         description: "The primary key for this table"
         tests:
           - unique
