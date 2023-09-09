@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: northwind
+    database: postgres  
+    schema: northwind  
+    tables:
+      - name: customers
