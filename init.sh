@@ -6,7 +6,9 @@
 docker-compose -f docker-compose-dbt-db.yml build
 
 # run
-docker-compose -f docker-compose-dbt-db.yml up
+docker-compose -f docker-compose-dbt-db.yml up -d
+
+sleep 5
 
 # create virual env
 python3 -m venv .dbt-env
